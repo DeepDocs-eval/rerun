@@ -195,7 +195,7 @@ Notes:
  - `identifiers` has become `instance_keys`.
 
 ### log_scalar
-Replace with `TimeSeriesScalar`
+Replace with [Scalars](../types/archetypes/scalars.md)
 
 ### log_segmentation_image
 Replace with [SegmentationImage](../types/archetypes/segmentation_image.md)

@@ -28,7 +28,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         rec.log(
             "trig/sin",
             &rerun::Scalars::single((t as f64 / 100.0).sin()),
-        )?;
+            &rerun::Scalars::new([(t as f64 / 100.0).sin()]),
         rec.log(
             "trig/cos",
             &rerun::Scalars::single((t as f64 / 100.0).cos()),

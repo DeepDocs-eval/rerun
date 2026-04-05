@@ -52,7 +52,7 @@ def log_custom_data() -> None:
         "left/my_confident_point_cloud",
         CustomPoints3D(
             positions=point_grid,
-            confidences=[42],
+            confidences=[42] * len(point_grid),
         ),
     )
 
