@@ -13,17 +13,13 @@ cameras with large focal lengths, but become problematic for cameras with smalle
 focal length values. This value is now normalized based on the focal length of
 the camera.
 
-If the default value of `0.1` is still too large for your use-case it can be configured
-using the new `near_clip_plane` of the `VisualBounds2D` blueprint property, either
-through the UI, or through the SDK in Python:
+using the new `NearClipPlane` blueprint archetype, either through the UI, or through the SDK in Python:
 ```python
 rr.send_blueprint(
     rrb.Spatial2DView(
         origin="world/cam",
         contents="/**",
-        visual_bounds=rrb.VisualBounds2D(
-            near_clip_plane=0.01,
-        ),
+        near_clip_plane=rrb.NearClipPlane(0.01),
     )
 )
 ```
@@ -68,7 +64,7 @@ Previously, the viewer would show 3 arrows for every logged transform if any of 
 
 For many usecases this led to too many arrows being shown by default.
 We therefore removed the last condition - arrows will no longer show by default if they're the only visualizer.
-The easiest way to opt-in to transform arrows is to set `AxisLength` (`axis_length` field on the `Transform3D` archetype) on your transforms.
+The easiest way to opt-in to transform arrows is to log the `AxisLength` component alongside your `Transform3D`.
 
 ### `DisconnectedSpace` archetype/component deprecated
 

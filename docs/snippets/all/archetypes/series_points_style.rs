@@ -26,7 +26,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     for t in 0..((std::f32::consts::TAU * 2.0 * 10.0) as i64) {
         rec.set_time_sequence("step", t);
 
-        // Log two time series under a shared root so that they show in the same plot by default.
+        rec.log("trig/sin", &rerun::Scalars::new([(t as f64 / 10.0).sin()]))?;
         rec.log("trig/sin", &rerun::Scalars::single((t as f64 / 10.0).sin()))?;
         rec.log("trig/cos", &rerun::Scalars::single((t as f64 / 10.0).cos()))?;
     }

@@ -45,7 +45,7 @@ rr.init("rerun_example_demo")
 rr.connect_grpc()
 
 # Or connect to a specific port
-rr.connect_grpc("rerun+http://127.0.0.1:6789")
+rr.connect_grpc("rerun+http://127.0.0.1:6789/proxy")
 ```
 
 ## Tips

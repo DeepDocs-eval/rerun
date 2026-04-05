@@ -9,7 +9,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         rec.set_time_sequence("step", step);
         rec.log(
             "scalars",
-            &rerun::Scalars::single((step as f64 / 10.0).sin()),
+            &rerun::Scalars::new([(step as f64 / 10.0).sin()]),
         )?;
     }
 

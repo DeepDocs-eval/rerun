@@ -82,11 +82,11 @@ snippet: archetypes/image_advanced
 snippet: archetypes/image_row_updates
 
 <picture data-inline-viewer="snippets/archetypes/image_row_updates">
-  <source media="(max-width: 480px)" srcset="https://static.rerun.io/image_column_updates/8edcdc512f7b97402f03c24d7dcbe01b3651f86d/480w.png">
-  <source media="(max-width: 768px)" srcset="https://static.rerun.io/image_column_updates/8edcdc512f7b97402f03c24d7dcbe01b3651f86d/768w.png">
-  <source media="(max-width: 1024px)" srcset="https://static.rerun.io/image_column_updates/8edcdc512f7b97402f03c24d7dcbe01b3651f86d/1024w.png">
-  <source media="(max-width: 1200px)" srcset="https://static.rerun.io/image_column_updates/8edcdc512f7b97402f03c24d7dcbe01b3651f86d/1200w.png">
-  <img src="https://static.rerun.io/image_column_updates/8edcdc512f7b97402f03c24d7dcbe01b3651f86d/full.png">
+  <source media="(max-width: 480px)" srcset="https://static.rerun.io/image_row_updates/8edcdc512f7b97402f03c24d7dcbe01b3651f86d/480w.png">
+  <source media="(max-width: 768px)" srcset="https://static.rerun.io/image_row_updates/8edcdc512f7b97402f03c24d7dcbe01b3651f86d/768w.png">
+  <source media="(max-width: 1024px)" srcset="https://static.rerun.io/image_row_updates/8edcdc512f7b97402f03c24d7dcbe01b3651f86d/1024w.png">
+  <source media="(max-width: 1200px)" srcset="https://static.rerun.io/image_row_updates/8edcdc512f7b97402f03c24d7dcbe01b3651f86d/1200w.png">
+  <img src="https://static.rerun.io/image_row_updates/8edcdc512f7b97402f03c24d7dcbe01b3651f86d/full.png">
 </picture>
 
 ### Update an image over time, in a single operation
